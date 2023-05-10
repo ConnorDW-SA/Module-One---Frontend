@@ -1,20 +1,13 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
-interface NavbarProps {
-  Title: string;
-}
-
-const MyNavbar = ({ title: Title }): JSX.Element => {
+const MyNavbar: React.FC = () => {
   return (
-    <Navbar>
-      <a>{Title}</a>
-      <a>Month 1</a>
-      <a>Month 2</a>
-      <a>Month 3</a>
-      <a>Month 4</a>
-      <a>Month 5</a>
-      <a>Month 6</a>
+    <Navbar className="bg-dark text-light d-flex justify-content-between px-5">
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/unit_one">Unit 1</Nav.Link>
+      <Nav.Link href="/unit_two">Unit 2</Nav.Link>
+      <Nav.Link href="/unit_three">Unit 3</Nav.Link>
     </Navbar>
   );
 };
