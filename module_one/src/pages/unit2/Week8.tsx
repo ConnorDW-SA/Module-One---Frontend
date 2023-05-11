@@ -1,8 +1,8 @@
 import React from "react";
 import Day from "../../components/unitOne/Day";
 
-const WeekFour: React.FC = () => {
-  const weekNumber = 4;
+const WeekEight: React.FC = () => {
+  const weekNumber = 8;
   return (
     <div className="bg-primary text-light">
       <h1>Week {weekNumber}</h1>
@@ -11,4 +11,4 @@ const WeekFour: React.FC = () => {
   );
 };
 
-export default WeekFour;
+export default WeekEight;

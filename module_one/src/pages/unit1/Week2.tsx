@@ -1,13 +1,15 @@
 import React from "react";
-import Day from "../../components/unitOne/week1/Day";
+import Day from "../../components/unitOne/Day";
+
 const WeekTwo: React.FC = () => {
+  const weekNumber = 2;
+  const days = 5;
   return (
     <div className="bg-light">
-      <h1>Week Two</h1>
-      <Day week={1} day={2} />
-      <Day week={1} day={3} />
-      <Day week={1} day={4} />
-      <Day week={1} day={5} />
+      <h1>Week {weekNumber}</h1>
+      {Array.from({ length: days }, (_, i) => (
+        <Day key={i} week={weekNumber} day={i + 1} />
+      ))}
     </div>
   );
 };
