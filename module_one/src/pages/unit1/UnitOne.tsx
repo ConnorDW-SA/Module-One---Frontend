@@ -1,8 +1,8 @@
 import React from "react";
-import WeekOne from "./unitOne/WeekOne";
-import WeekTwo from "./unitOne/WeekTwo";
-import WeekThree from "./unitOne/WeekThree";
-import WeekFour from "./unitOne/WeekFour";
+import WeekOne from "./Week1";
+import WeekTwo from "./Week2";
+import WeekThree from "./Week3";
+import WeekFour from "./Week4";
 const UnitOne: React.FC = () => {
   return (
     <div>

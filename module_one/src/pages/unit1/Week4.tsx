@@ -1,5 +1,5 @@
 import React from "react";
-import BuildWeek from "../../components/unitOne/weekFour/BuildWeek";
+import BuildWeek from "../../components/unitOne/week4/BuildWeek";
 
 const WeekFour: React.FC = () => {
   return (

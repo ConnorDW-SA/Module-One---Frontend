@@ -4,9 +4,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyNavbar from "./components/navbar/Navbar";
 import HomePage from "./pages/HomePage";
-import UnitOne from "./pages/UnitOne";
-import UnitTwo from "./pages/UnitTwo";
-import UnitThree from "./pages/UnitThree";
+import UnitOne from "./pages/unit1/UnitOne";
+import UnitTwo from "./pages/unit2/UnitTwo";
+import UnitThree from "./pages/unit3/UnitThree";
 
 function App() {
   return (
