@@ -1,0 +1,29 @@
+.chevron-left,
+.chevron-right {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.chevron-left {
+  left: 10px;
+}
+
+.chevron-right {
+  right: 10px;
+}
+
+.chevron-left svg,
+.chevron-right svg {
+  width: 40px;
+  height: 40px;
+}
+
+.chevron-left svg:hover,
+.chevron-right svg:hover {
+  color: aqua;
+}

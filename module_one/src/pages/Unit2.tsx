@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Week from "../components/day&week/Week";
+import Week from "../components/helpers/Week";
 
 const UnitTwo: React.FC = () => {
   const [currentWeek, setCurrentWeek] = useState(1);

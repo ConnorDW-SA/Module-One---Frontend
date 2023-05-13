@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Week from "../components/day&week/Week";
+import Week from "../components/helpers/Week";
+import NavigationButtons from "../components/helpers/NavigationButtons";
 import Project1 from "../components/unit1projects/week1/Project1";
 import Project2 from "../components/unit1projects/week1/Project2";
 import Project3 from "../components/unit1projects/week1/Project3";
@@ -20,28 +21,33 @@ const UnitOne: React.FC = () => {
     setCurrentWeek(weekNumber);
   };
 
-  const weeks = [
-    <Week weekNumber={1} days={4} startingDay={2} />,
+  const [week1, week2, week3, week4] = [
+    <Week
+      weekNumber={1}
+      days={4}
+      startingDay={2}
+      projects={[Project1, Project2, Project3, Project4]}
+    />,
     <Week weekNumber={2} days={5} startingDay={1} />,
     <Week weekNumber={3} days={5} startingDay={1} />,
     <Week weekNumber={4} isBuildWeek buildWeekNumber={1} />
   ];
 
+  const weeks = [week1, week2, week3, week4];
+
   const CurrentWeek = weeks[currentWeek - 1];
 
   return (
-    <div>
-      <h1>Unit One</h1>
+    <div className="text-center">
+      <NavigationButtons
+        handlePrevious={handlePreviousWeek}
+        handleNext={handleNextWeek}
+        handleSelect={handleSelectWeek}
+        length={weeks.length}
+        label="Week"
+        showPreviousNextButtons={false}
+      />
       {CurrentWeek}
-      <div>
-        <button onClick={handlePreviousWeek}>Previous</button>
-        {Array.from({ length: weeks.length }, (_, i) => (
-          <button key={i} onClick={() => handleSelectWeek(i + 1)}>{`Week ${
-            i + 1
-          }`}</button>
-        ))}
-        <button onClick={handleNextWeek}>Next</button>
-      </div>
     </div>
   );
 };
