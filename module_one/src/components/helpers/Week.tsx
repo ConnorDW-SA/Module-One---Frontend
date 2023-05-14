@@ -1,5 +1,5 @@
+// Week.tsx
 import React, { useState } from "react";
-import Day from "./Day";
 import NavigationButtons from "./NavigationButtons";
 
 interface WeekProps {
@@ -8,6 +8,7 @@ interface WeekProps {
   startingDay?: number;
   isBuildWeek?: boolean;
   buildWeekNumber?: number;
+  weekTopic?: string;
   projects?: React.ComponentType[];
 }
 
@@ -17,6 +18,7 @@ const Week: React.FC<WeekProps> = ({
   startingDay,
   isBuildWeek,
   buildWeekNumber,
+  weekTopic,
   projects
 }) => {
   const defaultDays = 5;
@@ -51,11 +53,10 @@ const Week: React.FC<WeekProps> = ({
   return (
     <div>
       <div className="text-dark">
-        <Day
-          key={currentProject - 1}
-          week={weekNumber}
-          day={currentProject - 1 + (startingDay || +1)}
-        />
+        <h1>{weekTopic}</h1>
+        <h2>
+          Week {weekNumber} Day {currentProject - 1 + (startingDay || +1)}
+        </h2>
       </div>
       <div className="project">{CurrentProject && <CurrentProject />}</div>
       <NavigationButtons

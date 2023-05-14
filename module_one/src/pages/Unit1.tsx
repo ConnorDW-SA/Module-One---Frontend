@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Week from "../components/helpers/Week";
 import NavigationButtons from "../components/helpers/NavigationButtons";
-import Project1 from "../components/unit1projects/week1/Project1";
-import Project2 from "../components/unit1projects/week1/Project2";
+import Project1 from "../components/unit1projects/week1/project1/Project1";
+import Project2 from "../components/unit1projects/week1/project2/Project2";
 import Project3 from "../components/unit1projects/week1/Project3";
 import Project4 from "../components/unit1projects/week1/Project4";
 
@@ -26,6 +26,7 @@ const UnitOne: React.FC = () => {
       weekNumber={1}
       days={4}
       startingDay={2}
+      weekTopic="HTML & CSS"
       projects={[Project1, Project2, Project3, Project4]}
     />,
     <Week weekNumber={2} days={5} startingDay={1} />,

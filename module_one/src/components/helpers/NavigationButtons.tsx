@@ -22,7 +22,7 @@ const NavigationButtons: React.FC<NavigationButtonsProps> = ({
   showSelectButtons = true
 }) => {
   return (
-    <div className="bg-secondary mb-5">
+    <div className="bg-secondary mb-3">
       {showPreviousNextButtons && (
         <button className="chevron-left" onClick={handlePrevious}>
           <ChevronLeft />
