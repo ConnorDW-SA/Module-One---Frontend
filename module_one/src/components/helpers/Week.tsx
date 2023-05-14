@@ -43,23 +43,21 @@ const Week: React.FC<WeekProps> = ({
   if (isBuildWeek) {
     return (
       <div>
-        <h1>Week {weekNumber}</h1>
         <p>Buildweek {buildWeekNumber}</p>
       </div>
     );
   }
 
   return (
-    <div className="bg-secondary text-light">
-      <h1>Week {weekNumber}</h1>
-      <div>
-        {CurrentProject && <CurrentProject />}
+    <div>
+      <div className="text-dark">
         <Day
           key={currentProject - 1}
           week={weekNumber}
           day={currentProject - 1 + (startingDay || +1)}
         />
       </div>
+      <div className="project">{CurrentProject && <CurrentProject />}</div>
       <NavigationButtons
         handlePrevious={handlePreviousProject}
         handleNext={handleNextProject}

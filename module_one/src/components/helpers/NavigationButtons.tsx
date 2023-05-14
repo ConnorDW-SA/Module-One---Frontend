@@ -1,5 +1,6 @@
 import { ReactComponent as ChevronLeft } from "../../assets/chevronleft.svg";
 import { ReactComponent as ChevronRight } from "../../assets/chevronright.svg";
+import { Button } from "react-bootstrap";
 
 interface NavigationButtonsProps {
   handlePrevious: () => void;
@@ -21,7 +22,7 @@ const NavigationButtons: React.FC<NavigationButtonsProps> = ({
   showSelectButtons = true
 }) => {
   return (
-    <div>
+    <div className="bg-secondary mb-5">
       {showPreviousNextButtons && (
         <button className="chevron-left" onClick={handlePrevious}>
           <ChevronLeft />
@@ -29,9 +30,11 @@ const NavigationButtons: React.FC<NavigationButtonsProps> = ({
       )}
       {showSelectButtons &&
         Array.from({ length }, (_, i) => (
-          <button key={i} onClick={() => handleSelect(i + 1)}>{`${label} ${
-            i + 1
-          }`}</button>
+          <Button
+            className="w-25 btn-secondary py-3"
+            key={i}
+            onClick={() => handleSelect(i + 1)}
+          >{`${label} ${i + 1}`}</Button>
         ))}
       {showPreviousNextButtons && (
         <button className="chevron-right" onClick={handleNext}>

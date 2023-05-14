@@ -7,9 +7,9 @@ interface DayProps {
 
 const Day: React.FC<DayProps> = ({ week, day }) => {
   return (
-    <p>
+    <h2>
       Week {week} Day {day}
-    </p>
+    </h2>
   );
 };
 
