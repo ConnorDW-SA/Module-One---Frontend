@@ -37,7 +37,7 @@ Week 2 - Advanced React techniques
 Week 3 - Redux and Typescript
 Week 4 - Build week - LinkedIn Clone
 
-# -------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------
 
 # Getting Started with Create React App
 
