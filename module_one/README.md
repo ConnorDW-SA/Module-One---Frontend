@@ -45,11 +45,11 @@ Unit 3:
 
 Week 9 - Intro to React
 
-Week 2 - Advanced React techniques
+Week 10 - Advanced React techniques
 
-Week 3 - Redux and Typescript
+Week 11 - Redux and Typescript
 
-Week 4 - Build week - LinkedIn Clone
+Week 12 - Build week - LinkedIn Clone
 
 # ------------------------------------------------------------------------------
 
