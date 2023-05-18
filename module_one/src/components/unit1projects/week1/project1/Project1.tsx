@@ -2,50 +2,39 @@ import React from "react";
 import logo from "./assets/logo.png";
 import focacca from "./assets/focacca.png";
 import "./assets/Project1.css";
+//
 const Project1: React.FC = () => {
   return (
-    <body>
-      <div className="centrediv">
-        <div className="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <br />
-        <div className="header">
-          Part of
-          <span> A SIMPLY FABULOUS THANKSGIVING</span>
-        </div>
+    <div className="project-one">
+      <img className="img logo-img" src={logo} alt="logo" />
+      <div className="header">Part of A SIMPLY FABULOUS THANKSGIVING</div>
+      <h2 className="header-two">
+        Focaccia with Caramelized Onions, <br />
+        Cranberries, and Brie
+      </h2>
 
-        <h2 className="head-second">
-          Focaccia with Caramelized Onions, <br />
-          Cranberries, and Brie
-        </h2>
+      {/* ---------------------------------------------------------------------------------------------------- */}
+      <div className="content-center text-left">
         <p>
           Wow your taste buds with this festive focaccia appetizer topped with
           sweet caramelized onions, tart <br />
           cranberries, and creamy brie. It will become your new favorite holiday
           starter!
         </p>
-        <div>
-          <img className="focacca" src={focacca} alt="focacca" />
-        </div>
+        <img className="focacca" src={focacca} alt="focacca" />
+        <p className="span-grey">Image: Sally Vegas</p>
 
-        <p className="sally">Image: Sally Vegas</p>
-      </div>
-
-      <div className="leftdiv">
-        <div className="featuredtotal">
-          <span className="featured">
-            FEATURED IN:
-            <br />
-          </span>
-          <span className="featurelink">
+        <div className="featured">
+          <span>FEATURED IN:</span>
+          <br />
+          <span>
             <a href="https://www.simplyrecipes.com/10-cranberry-recipes-that-go-beyond-sauce-5206174">
               Fresh Cranberry Recipes That Go Beyond Sauce
             </a>
           </span>
         </div>
-        <h3>Ingredients</h3>
-        <hr className="bluey" />
+        <h3 className="ingredients">Ingredients</h3>
+        {/* ---------------------------------------------------------------------------------------------------- */}
         <h4>For the focaccia:</h4>
         <ul>
           <li>4 cups (500g) all-purpse flour</li>
@@ -66,9 +55,9 @@ const Project1: React.FC = () => {
           </li>
           <li>1 1/2 cups fresh or frozen cranberries</li>
         </ul>
-        <h3>Method</h3>
-        <hr className="methodhr" />
-        <div className="method">
+
+        <h3 className="method-header">Method</h3>
+        <div>
           <h4>1. Make the focaccia dough</h4>
           <p>
             In a medium-sized mixing bowl, or in a stand mixer with a paddle
@@ -83,14 +72,14 @@ const Project1: React.FC = () => {
         <p>
           Read more on{" "}
           <a
-            className="last link"
+            className="last-link"
             href="https://www.simplyrecipes.com/10-cranberry-recipes-that-go-beyond-sauce-5206174"
           >
             Simply recipes
           </a>
         </p>
       </div>
-    </body>
+    </div>
   );
 };
 

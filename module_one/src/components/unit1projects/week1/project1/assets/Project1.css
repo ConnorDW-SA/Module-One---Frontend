@@ -1,25 +1,30 @@
-.centrediv {
-  text-align: center;
+.content-center {
+  width: 720px;
+  margin: auto;
 }
 
-span {
-  font-weight: bold;
+.img {
+  display: block;
+  margin: auto;
+}
+
+.logo-img {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 60px;
 }
 
 .header {
-  color: rgb(17, 82, 19);
   background-color: rgb(255 253 233);
-  padding-top: 10px;
+  padding: 15px;
   border-top: 2px solid #ffd993;
+  font-weight: 600;
+  margin-bottom: 80px;
+  color: rgb(17, 82, 19);
 }
 
-.head-second {
-  font-size: 2rem;
-  margin-top: 60px;
-}
-
-.sally {
-  color: grey;
+.header-two {
+  margin-bottom: 40px;
 }
 
 .focacca {
@@ -27,71 +32,41 @@ span {
   filter: drop-shadow(5px 5px 4px #797878);
 }
 
-.leftdiv {
-  text-align: left;
-  list-style-position: inside;
-  padding-left: 35.5%;
+.span-grey {
+  color: gray;
+  padding: 10px;
 }
 
-ul li {
-  list-style-type: disc;
-  list-style-type: disc;
+.text-left {
+  text-align: left;
 }
 
 .featured {
-  color: rgb(255, 123, 0);
-  padding-left: 8px;
-}
-
-.featurelink {
-  padding-left: 8px;
-}
-
-.featurelink::before::after {
-  color: aquamarine;
-}
-
-.featuredtotal {
   border-left: 2px solid #ffd993;
-  margin-bottom: 3%;
+  padding-left: 20px;
+  color: darkorange;
 }
 
-.bluey {
-  background-color: rgb(18, 184, 129);
-  height: 1px;
-  border: none;
-  margin-right: 55%;
-  margin-bottom: 3%;
-}
-
-ul li {
-  line-height: 2rem;
-}
-
-.methodhr {
-  background-color: rgb(18, 184, 129);
-  height: 1px;
-  border: none;
-  margin-right: 55%;
-}
-
-.method {
-  padding-left: 1%;
-}
-
-a {
-  color: rgb(18, 184, 129);
+.featured a {
+  color: rgb(17, 82, 19);
   text-decoration: underline;
 }
 
-a:visited {
-  text-decoration: none;
+.ingredients {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(29, 187, 153);
+  margin-bottom: 20px;
 }
 
-a:hover {
-  text-decoration: none;
+.method-header {
+  border-bottom: 1px solid rgb(29, 187, 153);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-a:active {
-  text-decoration: none;
+.last-link {
+  color: rgb(17, 82, 19);
+  text-decoration: underline;
 }
