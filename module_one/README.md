@@ -6,6 +6,7 @@ The months are split into 3 units, which have 4 weeks each, respectively.
 
 I have converted them all into a Typescript React App. However, I have not edited my initial work, 
 beyond _converting the basic HTML files into TSX components (edit later)_.
+
 Alternatively, you can view the unedited projects by checking out any of the Unit repositories on my Github profile!
 
 Here is a breakdown of the site:
@@ -14,27 +15,40 @@ You can view each day by navigating to Unit #, Week #
 and clicking the chevrons on the side of the pages to navigate between each day of the week.
 
 Although some weeks there are 5 projects, one for each day, a few weeks only have 4, or even 3 projects.
+
 This is due to holidays/no projects assigned/the assignment was research etc.
 
 Build weeks are a team effort, displaying all our learnt skills from the previous weeks of the unit
 and collaborating with a new team each build week.
 
 Unit 1:
+
 Week 1 - HTML & CSS
+
 Week 2 - Intro to Javascript
+
 Week 3 - JS Dom
+
 Week 4 - Build week - Quiz project
 
 Unit 2:
+
 Week 5 - Advanced CSS
+
 Week 6 - Intro to Bootstrap
+
 Week 7 - Advanced JS techniques
+
 Week 8 - Build week - Netflix clone
 
 Unit 3:
+
 Week 9 - Intro to React
+
 Week 2 - Advanced React techniques
+
 Week 3 - Redux and Typescript
+
 Week 4 - Build week - LinkedIn Clone
 
 # ------------------------------------------------------------------------------
