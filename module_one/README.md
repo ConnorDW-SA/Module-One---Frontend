@@ -1,10 +1,12 @@
 # Module 1
 
-This project contains all my projects from Week 1-12 of my FullStack web dev course on https://epicode.com/. This is the frontend module.
+This project contains all my projects from Week 1-12 of my FullStack web dev course on https://epicode.com/. 
+This is the frontend module.
 The months are split into 3 units, which have 4 weeks each, respectively.
 
-I have converted them all into a Typescript React App. However, I have not edited my initial work, beyond _converting the basic HTML files into TSX components (edit later)_.
-Alternatively, you can view the unedited projects by checking out any of the Unit repositories on my Github!
+I have converted them all into a Typescript React App. However, I have not edited my initial work, 
+beyond _converting the basic HTML files into TSX components (edit later)_.
+Alternatively, you can view the unedited projects by checking out any of the Unit repositories on my Github profile!
 
 Here is a breakdown of the site:
 
@@ -35,7 +37,7 @@ Week 2 - Advanced React techniques
 Week 3 - Redux and Typescript
 Week 4 - Build week - LinkedIn Clone
 
-# ---------------------------------------
+# -------------------------------------------------------------------------
 
 # Getting Started with Create React App
 
