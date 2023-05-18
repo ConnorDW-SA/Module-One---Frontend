@@ -35,6 +35,8 @@ Week 2 - Advanced React techniques
 Week 3 - Redux and Typescript
 Week 4 - Build week - LinkedIn Clone
 
+# ---------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
