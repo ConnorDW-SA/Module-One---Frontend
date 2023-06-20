@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "./assets/logo.png";
 import "./assets/Project2.css";
 const Project2: React.FC = () => {
   return (
@@ -6,7 +7,7 @@ const Project2: React.FC = () => {
       <a href="#" className="top"></a>
       <div className="container">
         <div className="top-banner">
-          <img className="logo" src="assets/logo.png" />
+          <img className="logo" src={logo} />
         </div>
         <div className="navbarbox">
           <div className="navbar">
